@@ -29,6 +29,10 @@ set visualbell			" don't beep
 set noerrorbells		" don't beep
 "set autowrite			" save on buffer switch
 set mouse=a
+set wildmenu            " Wild Menu enable
+
+
+
 
 "Setting custom leader key
 let mapleader = ","
@@ -99,7 +103,6 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'easymotion/vim-easymotion'
 Plug 'rafi/awesome-vim-colorschemes'
 Plug 'jlanzarotta/bufexplorer'
-Plug 'ervandew/supertab'
 
 call plug#end()
 "Vim Plug Stop
@@ -121,10 +124,6 @@ vmap <leader>/ <leader>c<Space>
 
 "BufferExplorer
 nmap <leader>o :BufExplorer<cr>
-
-"SuperTabs
-let g:SuperTabCompletionContexts = ['s:ContextText', 's:ContextDiscover']
-let g:SuperTabContextDiscoverDiscovery = ["&completefunc:<c-x><c-u>", "&omnifunc:<c-x><c-o>"]
 
 "Powerline Plugin
 "set rtp+=/usr/local/lib/python2.7/dist-packages/powerline/bindings/vim/

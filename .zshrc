@@ -103,6 +103,7 @@ alias apts="sudo apt search "
 alias apti="sudo apt-get install "
 alias open="xdg-open"
 alias .net="dotnet"
+alias apt="sudo apt"
 #export TERM=xterm-256color
 
 #Powerline for zsh
