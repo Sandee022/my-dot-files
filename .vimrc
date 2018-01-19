@@ -4,7 +4,8 @@ set t_co=256
 
 
 "Gui Options
-set guifont=droid\ sans\ mono\ for\ powerline\ regular\ 11
+"set guifont=droid\ sans\ mono\ for\ powerline\ regular\ 11
+set guifont=Fira\ Code\ 12
 set guioptions-=T       " Remove Top Toolbar
 set guioptions-=r       " Remove scrollbar left and right
 set go-=L               " Removes left hand scroll bar
@@ -54,7 +55,6 @@ imap jj <esc>
 nnoremap ,cd :cd %:p:h<CR>:pwd<CR>
 
 "Easier window navigation
-
 nmap <C-h> <C-w>h
 nmap <C-j> <C-w>j
 nmap <C-k> <C-w>k
@@ -91,9 +91,7 @@ endif
 "Vim Plug Start
 call plug#begin('~/.vim/plugged')
 
-Plug 'Shougo/vimproc.vim', {'do' : 'make'}
-Plug 'Shougo/unite.vim'
-Plug 'm2mdas/phpcomplete-extended'
+"Plug 'shawncplus/phpcomplete.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'scrooloose/nerdtree'
@@ -103,9 +101,13 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'easymotion/vim-easymotion'
 Plug 'rafi/awesome-vim-colorschemes'
 Plug 'jlanzarotta/bufexplorer'
+Plug 'tpope/vim-surround'
 
 call plug#end()
 "Vim Plug Stop
+
+
+
 
 "Color Scheme
 if has("gui_running")
@@ -128,3 +130,4 @@ nmap <leader>o :BufExplorer<cr>
 "Powerline Plugin
 "set rtp+=/usr/local/lib/python2.7/dist-packages/powerline/bindings/vim/
 "set laststatus=2
+
