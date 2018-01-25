@@ -59,7 +59,9 @@ ZSH_THEME="agnoster"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  git composer laravel
+  git
+  composer
+  laravel
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -119,4 +121,4 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_us.UTF-8
 
 #Custom user paths
-#PATH="./vendor/bin:$PATH"
+PATH="./vendor/bin:$PATH"
