@@ -99,18 +99,6 @@ export TERM=xterm-256color
 #Hiding Username in agnoster
 prompt_context () { }
 
-# Custom Alias
-alias _="sudo "
-alias apts="sudo apt search "
-alias apti="sudo apt-get install "
-alias open="xdg-open"
-alias .net="dotnet"
-alias apt="sudo apt"
-alias vim="nvim"
-alias vi="nvim"
-alias oldvim="\vim"
-#export term=xterm-256color
-
 #Powerline for zsh
 if [[ -r /usr/local/lib/python2.7/dist-packages/powerline/bindings/zsh/powerline.zsh ]]; then
     source /usr/local/lib/python2.7/dist-packages/powerline/bindings/zsh/powerline.zsh
@@ -122,3 +110,16 @@ export LANG=en_us.UTF-8
 
 #Custom user paths
 PATH="./vendor/bin:$PATH"
+
+# Custom Alias
+alias _="sudo "
+alias apts="sudo apt search "
+alias apti="sudo apt-get install "
+alias open="xdg-open"
+alias .net="dotnet"
+alias apt="sudo apt"
+alias vim="nvim"
+alias vi="nvim"
+alias oldvim="\vim"
+alias art="php artisan"
+alias gvim="nvim-qt"
